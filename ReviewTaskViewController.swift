@@ -14,7 +14,6 @@ class ReviewTaskViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("review")
         // Do any additional setup after loading the view.
     }
 
@@ -22,8 +21,9 @@ class ReviewTaskViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
     /*
     // MARK: - Navigation
 
